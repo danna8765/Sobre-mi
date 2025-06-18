@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Perfil personal de un apasionado del desarrollo de software, con intereses en rock y metal, estudios en análisis y desarrollo, y habilidades en HTML, CSS, JavaScript y React." />
+  <title>Sobre Mí</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos/style.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1 tabindex="0">Soy estudiante de análisis y desarrollo de software</h1>
+    <p tabindex="0">Con gustos en libros, música, y todo lo relacionado con rock y metal.</p>
+  </header>
+
+  <main role="main" aria-label="Contenido principal sobre mis intereses y habilidades">
+    <!-- Intereses -->
+    <section class="interests-section" aria-labelledby="intereses-title">
+      <h2 id="intereses-title">Mis Intereses</h2>
+      <div class="interests" role="list">
+        <div class="interest-card" role="listitem" tabindex="0" aria-describedby="desc-leer">
+          <span class="material-icons interest-icon" aria-hidden="true">menu_book</span>
+          <div class="interest-label" id="desc-leer">Leer libros y artículos</div>
+        </div>
+        <div class="interest-card" role="listitem" tabindex="0" aria-describedby="desc-dormir">
+          <span class="material-icons interest-icon" aria-hidden="true">bedtime</span>
+          <div class="interest-label" id="desc-dormir">Dormir bien y descansar</div>
+        </div>
+        <div class="interest-card" role="listitem" tabindex="0" aria-describedby="desc-musica">
+          <span class="material-icons interest-icon" aria-hidden="true">music_note</span>
+          <div class="interest-label" id="desc-musica">Escuchar música</div>
+        </div>
+        <div class="interest-card" role="listitem" tabindex="0" aria-describedby="desc-rock">
+          <span class="material-icons interest-icon" aria-hidden="true">graphic_eq</span>
+          <div class="interest-label" id="desc-rock">Rock y Metal</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estudios -->
+    <section class="study-section" aria-labelledby="estudios-title" tabindex="0">
+      <h2 id="estudios-title">Estudios</h2>
+      <p>Actualmente estudio <strong>Análisis y Desarrollo de Software</strong> en el <a href="https://www.sena.edu.co" target="_blank" rel="noopener noreferrer">SENA</a>.</p>
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section class="skills-section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Habilidades Técnicas</h2>
+      <div class="skills-grid" role="list">
+        <article class="skill-card" role="listitem" tabindex="0">
+          <div class="skill-name">HTML5</div>
+          <div class="skill-desc">Maquetación semántica moderna y accesible.</div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0">
+          <div class="skill-name">CSS3</div>
+          <div class="skill-desc">Diseño responsive con Flexbox y Grid, animaciones.</div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-desc">Programación dinámica y manipulación del DOM.</div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0">
+          <div class="skill-name">React</div>
+          <div class="skill-desc">Construcción de interfaces usando componentes reutilizables.</div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0">
+          <div class="skill-name">Git & GitHub</div>
+          <div class="skill-desc">Control de versiones y colaboración en equipo.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Preguntas de Autoevaluación -->
+    <section class="autoeval-questions" aria-labelledby="faq-title">
+      <h2 id="faq-title">Preguntas de Autoevaluación</h2>
+
+      <!-- Item 1 -->
+      <div class="question-item">
+        <p><strong>¿Por qué usamos <code>clamp()</code> en los tamaños de fuente en lugar de valores fijos?</strong></p>
+        <p><em>Porque <code>clamp()</code> permite fluidez entre un valor mínimo, preferido y máximo, adaptándose a diferentes anchos de pantalla sin perder control.</em></p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="question-item">
+        <p><strong>¿Qué pasaría si removemos el meta viewport de nuestro HTML?</strong></p>
+        <p><em>Sin el meta viewport, los navegadores móviles escalan la página como si fuera de escritorio, causando zoom no deseado y mala legibilidad.</em></p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="question-item">
+        <p><strong>¿Por qué elegimos CSS Grid para la sección de skills en lugar de Flexbox?</strong></p>
+        <p><em>CSS Grid facilita crear una cuadrícula bidimensional (filas y columnas), ideal para mostrar tarjetas organizadas, mientras que Flexbox es unidimensional.</em></p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="question-item">
+        <p><strong>¿Cuál es la diferencia práctica entre usar <code>rem</code> y <code>em</code> para espaciados?</strong></p>
+        <p><em><code>rem</code> se basa en el tamaño de fuente raíz (<html>), garantizando consistencia global; <code>em</code> es relativo al tamaño de fuente del padre, útil para escalado local.</em></p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    © 2024 Mi Página Personal - Hecho con pasión y dedicación.
+  </footer>
+</body>
+</html>
